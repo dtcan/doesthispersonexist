@@ -10,6 +10,7 @@
         <div class="container mx-0 min-vw-100">
             <div class="row w-100">
                 <div class="col-md">
+                    <img id="blank" hidden="true" class="w-100" src="blank.jpg" />
                     <img id="image" class="w-100" src="blank.jpg" />
                 </div>
                 <div class="col-md text-center my-auto">
@@ -20,12 +21,13 @@
                     <button id="yes" type="button" class="btn btn-secondary" onclick="checkAnswer(true)">Yes</button>
                     <button id="no" type="button" class="btn btn-secondary" onclick="checkAnswer(false)">No</button><br /><br />
                     <button id="next" hidden="true" type="button" class="btn btn-secondary" onclick="nextQuestion()">Next</button>
-                    <h3 class="pt-5">Score: <span id="score">0</span></h3>
+                    <h3 class="pt-5">Score: <span id="score">0 / 0</span></h3>
                 </div>
             </div>
         </div>
-        <script crossorigin="anonymous" src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script crossorigin="anonymous" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
         <script crossorigin="anonymous" src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"></script>
+        <script src="metadata.js"></script>
         <script src="index.js"></script>
     </body>
 </html>
